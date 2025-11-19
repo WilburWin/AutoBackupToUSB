@@ -22,13 +22,16 @@
 
 ## 文件结构示例
 
-├─ AutoBackup.exe          ← 双击运行备份
-├─ ConfigTool.exe          ← 图形化配置工具
-├─ backup_paths.txt        ← 自动生成，保存需要备份的路径
-└─ backups/                ← 自动生成，所有备份放在这里
-   ├─ C_Users_YourName_Documents/
-   ├─ D_Work_Projects/
-   └─ ...
+- AutoBackup.exe          ← 双击运行备份主程序
+- ConfigTool.exe          ← 图形化配置工具（首次使用必打开）
+- backup_paths.txt        ← 自动生成，记录需要备份的文件夹路径
+- backups/                ← 备份存储根目录（程序自动创建）
+  - C_Users_你的用户名_Documents/
+  - C_Users_你的用户名_Desktop/
+  - C_Users_你的用户名_Downloads/
+  - D_Work_Projects/
+  - E_Important_Data/
+  - ...
 
 > 小技巧：把 `AutoBackup.exe` 快捷方式放到电脑桌面，每次想备份时直接拖 U 盘图标到快捷方式上也能运行（Windows 支持）
 
