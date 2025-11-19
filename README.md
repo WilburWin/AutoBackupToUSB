@@ -39,7 +39,7 @@
 
 ```bash
 # 1. 克隆仓库（或直接下载 AutoBackup.py 和 ConfigTool.py）
-git clone https://github.com/yourname/AutoBackupToUSB.git
+git clone https://github.com/WilburWin/AutoBackupToUSB.git
 cd AutoBackupToUSB
 
 # 2. 安装打包工具
