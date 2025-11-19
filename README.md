@@ -20,6 +20,15 @@
 3. 以后每次插入 U 盘，双击 U 盘里的 `AutoBackup.exe` 即可一键备份
 4. 备份内容会出现在 U 盘的 `backups` 文件夹中
 
+## 文件结构示例
+├─ AutoBackup.exe          ← 双击运行备份
+├─ ConfigTool.exe          ← 图形化配置工具
+├─ backup_paths.txt        ← 自动生成，保存需要备份的路径
+└─ backups/                ← 自动生成，所有备份放在这里
+   ├─ C_Users_YourName_Documents/
+   ├─ D_Work_Projects/
+   └─ ...
+
 > 小技巧：把 `AutoBackup.exe` 快捷方式放到电脑桌面，每次想备份时直接拖 U 盘图标到快捷方式上也能运行（Windows 支持）
 
 ## 自己打包生成 exe（开发者/进阶用户）
@@ -37,11 +46,4 @@ pyinstaller --onefile --name AutoBackup.exe AutoBackup.py
 pyinstaller --onefile --windowed --name ConfigTool.exe ConfigTool.py
 
 # 4. 把生成的 dist/AutoBackup.exe 和 dist/ConfigTool.exe 复制到 U 盘根目录即可
-## 文件结构示例
-├─ AutoBackup.exe          ← 双击运行备份
-├─ ConfigTool.exe          ← 图形化配置工具
-├─ backup_paths.txt        ← 自动生成，保存需要备份的路径
-└─ backups/                ← 自动生成，所有备份放在这里
-   ├─ C_Users_YourName_Documents/
-   ├─ D_Work_Projects/
-   └─ ...
+
