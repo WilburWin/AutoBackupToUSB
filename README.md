@@ -21,7 +21,7 @@
 4. 备份内容会出现在 U 盘的 `backups` 文件夹中
 
 ## 文件结构示例
-```bash
+```plaintext
 ├─ AutoBackup.exe          ← 双击运行备份
 ├─ ConfigTool.exe          ← 图形化配置工具
 ├─ backup_paths.txt        ← 自动生成，保存需要备份的路径
